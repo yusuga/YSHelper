@@ -155,22 +155,22 @@
 
 + (BOOL)isGreaterThanThisSystemVersion:(NSString*)version
 {
-    return [self compareCurrentSystemVersionAndThisVersion:version] == NSOrderedDescending;
+    return [self compareCurrentSystemVersionAndThisVersion:version] == NSOrderedAscending;
 }
 
 + (BOOL)isGreaterThanOrEqualToThisSystemVersion:(NSString*)version
 {
-    return [self compareCurrentSystemVersionAndThisVersion:version] >= NSOrderedSame;
+    return [self compareCurrentSystemVersionAndThisVersion:version] <= NSOrderedSame;
 }
 
 + (BOOL)isSmallerThanOrEqualToThisSystemVersion:(NSString*)version
 {
-    return [self compareCurrentSystemVersionAndThisVersion:version] <= NSOrderedSame;
+    return [self compareCurrentSystemVersionAndThisVersion:version] >= NSOrderedSame;
 }
 
 + (BOOL)isSmallerThanThisSystemVersion:(NSString*)version
 {
-    return [self compareCurrentSystemVersionAndThisVersion:version] == NSOrderedAscending;
+    return [self compareCurrentSystemVersionAndThisVersion:version] == NSOrderedDescending;
 }
 
 /* http://stackoverflow.com/questions/17070582/using-uiappearance-and-switching-themes */
