@@ -7,6 +7,31 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "YSHelper.h"
+#import <objc/runtime.h>
+
+static NSString * const kCustumSystemVersion = @"custumSystemVersion";
+
+@interface UIDevice (YSHelperTest)
+
+@property (nonatomic) NSString *custumSystemVersion;
+
+@end
+
+@implementation UIDevice (YSHelperTest)
+
+- (NSString *)custumSystemVersion
+{
+    return objc_getAssociatedObject(self, (__bridge const void *)(kCustumSystemVersion));
+}
+
+- (void)setCustumSystemVersion:(NSString *)version
+{
+    objc_setAssociatedObject(self, (__bridge const void *)(kCustumSystemVersion), version, OBJC_ASSOCIATION_RETAIN);
+}
+
+@end
+
 
 @interface YSHelperExampleTests : XCTestCase
 
@@ -26,9 +51,45 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testCompareOSVersion
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    Method fromMethod = class_getInstanceMethod([UIDevice class], @selector(systemVersion));
+    Method toMethod   = class_getInstanceMethod([UIDevice class], @selector(custumSystemVersion));
+    method_exchangeImplementations(fromMethod, toMethod);
+    
+    UIDevice *device = [UIDevice currentDevice];
+    
+    NSString *version = @"5.5.0";
+    device.custumSystemVersion = version;
+    XCTAssertEqualObjects(device.systemVersion, version);
+    
+    // バージョンより大きい
+    XCTAssertFalse([YSHelper isGreaterThanThisSystemVersion:@"1.0.0"]);
+    XCTAssertFalse([YSHelper isGreaterThanThisSystemVersion:@"5.4.9"]);
+    XCTAssertFalse([YSHelper isGreaterThanThisSystemVersion:@"5.5.0"]);
+    XCTAssertTrue([YSHelper isGreaterThanThisSystemVersion:@"5.5.1"]);
+    XCTAssertTrue([YSHelper isGreaterThanThisSystemVersion:@"6.0.0"]);
+    
+    // バージョン以上
+    XCTAssertFalse([YSHelper isGreaterThanOrEqualToThisSystemVersion:@"1.0.0"]);
+    XCTAssertFalse([YSHelper isGreaterThanOrEqualToThisSystemVersion:@"5.4.9"]);
+    XCTAssertTrue([YSHelper isGreaterThanOrEqualToThisSystemVersion:@"5.5.0"]);
+    XCTAssertTrue([YSHelper isGreaterThanOrEqualToThisSystemVersion:@"5.5.1"]);
+    XCTAssertTrue([YSHelper isGreaterThanOrEqualToThisSystemVersion:@"6.0.0"]);
+    
+    // バージョン以下
+    XCTAssertTrue([YSHelper isSmallerThanOrEqualToThisSystemVersion:@"1.0.0"]);
+    XCTAssertTrue([YSHelper isSmallerThanOrEqualToThisSystemVersion:@"5.4.9"]);
+    XCTAssertTrue([YSHelper isSmallerThanOrEqualToThisSystemVersion:@"5.5.0"]);
+    XCTAssertFalse([YSHelper isSmallerThanOrEqualToThisSystemVersion:@"5.5.1"]);
+    XCTAssertFalse([YSHelper isSmallerThanOrEqualToThisSystemVersion:@"6.0.0"]);
+    
+    // バージョン未満
+    XCTAssertTrue([YSHelper isSmallerThanThisSystemVersion:@"1.0.0"]);
+    XCTAssertTrue([YSHelper isSmallerThanThisSystemVersion:@"5.4.9"]);
+    XCTAssertFalse([YSHelper isSmallerThanThisSystemVersion:@"5.5.0"]);
+    XCTAssertFalse([YSHelper isSmallerThanThisSystemVersion:@"5.5.1"]);
+    XCTAssertFalse([YSHelper isSmallerThanThisSystemVersion:@"6.0.0"]);
 }
 
 @end
