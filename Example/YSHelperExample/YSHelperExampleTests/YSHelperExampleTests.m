@@ -10,6 +10,11 @@
 #import "YSHelper.h"
 #import <objc/runtime.h>
 
+#if defined(LOG_ASYNC_ENABLED)
+#undef LOG_ASYNC_ENABLED
+#define LOG_ASYNC_ENABLED NO
+#endif
+
 static NSString * const kCustumSystemVersion = @"custumSystemVersion";
 
 @interface UIDevice (YSHelperTest)
@@ -51,6 +56,13 @@ static NSString * const kCustumSystemVersion = @"custumSystemVersion";
     [super tearDown];
 }
 
+- (void)testAppIcon
+{
+    UIImage *image = [YSHelper appIcon];
+    XCTAssertNotNil(image);
+    NSLog(@"%s; imageSize = %@;", __func__, NSStringFromCGSize(image.size));
+}
+
 - (void)testCompareOSVersion
 {
     Method fromMethod = class_getInstanceMethod([UIDevice class], @selector(systemVersion));
@@ -90,6 +102,8 @@ static NSString * const kCustumSystemVersion = @"custumSystemVersion";
     XCTAssertFalse([YSHelper isSmallerThanThisSystemVersion:@"5.5.0"]);
     XCTAssertFalse([YSHelper isSmallerThanThisSystemVersion:@"5.5.1"]);
     XCTAssertFalse([YSHelper isSmallerThanThisSystemVersion:@"6.0.0"]);
+    
+    method_exchangeImplementations(toMethod, fromMethod);
 }
 
 @end

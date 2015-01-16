@@ -12,6 +12,8 @@
 
 @implementation YSHelper
 
+#pragma mark - Device
+
 + (BOOL)isPhone
 {
     return [self isPhone_];
@@ -58,6 +60,8 @@
     return s_is568h;
 }
 
+#pragma mark - Orientation
+
 + (BOOL)isOrientationPortrait;
 {
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
@@ -69,6 +73,8 @@
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     return UIInterfaceOrientationIsLandscape(orientation);
 }
+
+#pragma mark - Language
 
 + (BOOL)isJapaneseLanguage
 {
@@ -97,6 +103,29 @@
 {
     return [UIDevice currentDevice].name;
 }
+
+#pragma mark - Image
+
++ (UIImage*)appIcon
+{
+    NSArray *iconNames;
+    if ([self isPhone]) {
+        iconNames = @[@"AppIcon60x60@3x",
+                      @"AppIcon60x60@2x",
+                      @"AppIcon60x60"];
+    } else {
+        iconNames = @[@"AppIcon76x76@3x",
+                      @"AppIcon76x76@2x",
+                      @"AppIcon76x76"];
+    }
+    for (NSString *iconName in iconNames) {
+        return [UIImage imageNamed:iconName];
+    }
+    DDLogError(@"%s; appIcon = nil;", __func__);
+    return nil;
+}
+
+#pragma mark - Function
 
 + (BOOL)hasAirDrop
 {
@@ -147,6 +176,8 @@
     return s_hasAirDrop;
 }
 
+#pragma mark - Version
+
 + (NSComparisonResult)compareCurrentSystemVersionAndThisVersion:(NSString*)version
 {
     NSString *currentVersion = [UIDevice currentDevice].systemVersion;
@@ -185,6 +216,8 @@
     }
 }
 
+#pragma mark - Status bar
+
 + (CGSize)statusBarSizeToConsideredTheRotation
 {
     UIApplication *app = [UIApplication sharedApplication];
@@ -198,7 +231,7 @@
     }
 }
 
-#pragma mark - Jailbroken
+#pragma mark - Jailbreak
 
 /* http://stackoverflow.com/questions/413242/how-do-i-detect-that-an-sdk-app-is-running-on-a-jailbroken-phone */
 + (BOOL)isJailbroken
