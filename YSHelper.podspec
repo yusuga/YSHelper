@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'YSHelper'
-  s.version = '0.0.2'
+  s.version = '0.0.3'
   s.summary = 'iOS helper.'
   s.homepage = 'https://github.com/yusuga/YSHelper'
   s.license = 'MIT'
