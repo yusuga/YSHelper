@@ -216,6 +216,18 @@
     }
 }
 
+#pragma mark - ViewController
+
++ (UIViewController *)visibleViewController
+{
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    UIViewController *vc = window.rootViewController;
+    while (vc.presentedViewController) {
+        vc = vc.presentedViewController;
+    }
+    return vc;
+}
+
 #pragma mark - Status bar
 
 + (CGSize)statusBarSizeToConsideredTheRotation

@@ -40,6 +40,9 @@
 + (BOOL)isSmallerThanOrEqualToThisSystemVersion:(NSString*)version; // version以下
 + (BOOL)isSmallerThanThisSystemVersion:(NSString*)version; // version未満
 
+/* ViewController */
++ (UIViewController*)visibleViewController;
+
 /* Appearance */
 + (void)reloadAppearance;
 
