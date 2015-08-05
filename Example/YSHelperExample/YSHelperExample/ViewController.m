@@ -44,6 +44,7 @@ isPad = %@\n\
 deviceTypeStr = %@\n\
 isRetina = %@\n\
 is568h = %@\n\
+CPU = %@\n\
 isOrientationPortrait = %@\n\
 isOrientationLandscape = %@\n\
 isJapaneseLanguage = %@\n\
@@ -58,6 +59,7 @@ isJailbroken = %@",
                           [YSHelper deviceTypeStr],
                           YESorNOString([YSHelper isRetina]),
                           YESorNOString([YSHelper is568h]),
+                          [YSHelper CPU64bit] ? @"64bit" : @"32bit",
                           YESorNOString([YSHelper isOrientationPortrait]),
                           YESorNOString([YSHelper isOrientationLandscape]),
                           YESorNOString([YSHelper isJapaneseLanguage]),

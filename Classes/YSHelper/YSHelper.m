@@ -60,6 +60,26 @@
     return s_is568h;
 }
 
+/*
+ *  http://stackoverflow.com/a/19044023
+ *
+ *  Compile Time Check
+ *  #ifdef __LP64__
+ *      // 64bit
+ *  #else
+ *      // 32bit
+ *  #endif
+ */
++ (BOOL)CPU64bit
+{
+    return sizeof(void*) == 8;
+}
+
++ (BOOL)CPU32bit
+{
+    return ![self CPU64bit];
+}
+
 #pragma mark - Orientation
 
 + (BOOL)isOrientationPortrait;

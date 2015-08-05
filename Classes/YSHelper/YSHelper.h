@@ -18,6 +18,8 @@
 + (NSString*)deviceName; // e.g. @"My iPhone"
 + (BOOL)isRetina;
 + (BOOL)is568h;
++ (BOOL)CPU64bit;
++ (BOOL)CPU32bit;
 
 /* Orientation */
 + (BOOL)isOrientationPortrait;
