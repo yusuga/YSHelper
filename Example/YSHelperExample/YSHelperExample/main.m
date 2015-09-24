@@ -7,15 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import "AppDelegate.h"
+#import <LumberjackLauncher/LumberjackLauncher.h>
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        DDTTYLogger *logger = [DDTTYLogger sharedInstance];
-        [DDLog addLogger:logger];
-        [logger setColorsEnabled:YES];
+        [LumberjackLauncher launchStandardLoggers];
+        [LumberjackLauncher setXcodeConsoleLogColorsWithErrorColor:[UIColor redColor]
+                                                      warningColor:[UIColor yellowColor]
+                                                         infoColor:[UIColor darkGrayColor]
+                                                        debugColor:[UIColor greenColor]
+                                                      verboseColor:nil];
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

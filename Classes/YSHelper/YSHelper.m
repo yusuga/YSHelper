@@ -7,8 +7,8 @@
 //
 
 #import "YSHelper.h"
-
 #include <sys/sysctl.h>
+#import <LumberjackLauncher/LumberjackLauncher.h>
 
 @implementation YSHelper
 
