@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18C79EA036F9D11531AE6745 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E1715491CB403C67FB5E25 /* libPods.a */; };
 		B8647DC31897540C006DB647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8647DC21897540C006DB647 /* Foundation.framework */; };
 		B8647DC51897540C006DB647 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8647DC41897540C006DB647 /* CoreGraphics.framework */; };
 		B8647DC71897540C006DB647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8647DC61897540C006DB647 /* UIKit.framework */; };
@@ -16,12 +15,11 @@
 		B8647DD31897540C006DB647 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B8647DD21897540C006DB647 /* AppDelegate.m */; };
 		B8647DD61897540C006DB647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8647DD41897540C006DB647 /* Main.storyboard */; };
 		B8647DDB1897540C006DB647 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8647DDA1897540C006DB647 /* Images.xcassets */; };
-		B8647DE21897540C006DB647 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8647DE11897540C006DB647 /* XCTest.framework */; };
 		B8647DE31897540C006DB647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8647DC21897540C006DB647 /* Foundation.framework */; };
 		B8647DE41897540C006DB647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8647DC61897540C006DB647 /* UIKit.framework */; };
 		B8647DEC1897540C006DB647 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8647DEA1897540C006DB647 /* InfoPlist.strings */; };
-		B8647DEE1897540C006DB647 /* YSHelperExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8647DED1897540C006DB647 /* YSHelperExampleTests.m */; };
-		B8647DFA1897545A006DB647 /* YSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B8647DF91897545A006DB647 /* YSHelper.m */; };
+		B8647DEE1897540C006DB647 /* YSUtilityExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8647DED1897540C006DB647 /* YSUtilityExampleTests.m */; };
+		B8647DFA1897545A006DB647 /* YSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B8647DF91897545A006DB647 /* YSUtility.m */; };
 		B8647DFD1897547C006DB647 /* UINavigationController+iOS7Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B8647DFC1897547C006DB647 /* UINavigationController+iOS7Rotation.m */; };
 		B8647E00189754CB006DB647 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8647DFF189754CB006DB647 /* ViewController.m */; };
 		B87F14851BB9563100A43904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87F14841BB9563100A43904 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
@@ -38,33 +36,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B8647DBF1897540C006DB647 /* YSHelperExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSHelperExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8647DBF1897540C006DB647 /* YSUtilityExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSUtilityExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8647DC21897540C006DB647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B8647DC41897540C006DB647 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B8647DC61897540C006DB647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B8647DCA1897540C006DB647 /* YSHelperExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSHelperExample-Info.plist"; sourceTree = "<group>"; };
+		B8647DCA1897540C006DB647 /* YSUtilityExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSUtilityExample-Info.plist"; sourceTree = "<group>"; };
 		B8647DCC1897540C006DB647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B8647DCE1897540C006DB647 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B8647DD01897540C006DB647 /* YSHelperExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YSHelperExample-Prefix.pch"; sourceTree = "<group>"; };
 		B8647DD11897540C006DB647 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B8647DD21897540C006DB647 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B8647DD51897540C006DB647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8647DDA1897540C006DB647 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B8647DE01897540C006DB647 /* YSHelperExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSHelperExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8647DE11897540C006DB647 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		B8647DE91897540C006DB647 /* YSHelperExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSHelperExampleTests-Info.plist"; sourceTree = "<group>"; };
+		B8647DE01897540C006DB647 /* YSUtilityExample.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSUtilityExample.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8647DE91897540C006DB647 /* YSUtilityExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YSUtilityExampleTests-Info.plist"; sourceTree = "<group>"; };
 		B8647DEB1897540C006DB647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B8647DED1897540C006DB647 /* YSHelperExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSHelperExampleTests.m; sourceTree = "<group>"; };
-		B8647DF81897545A006DB647 /* YSHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSHelper.h; sourceTree = "<group>"; };
-		B8647DF91897545A006DB647 /* YSHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHelper.m; sourceTree = "<group>"; };
+		B8647DED1897540C006DB647 /* YSUtilityExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSUtilityExampleTests.m; sourceTree = "<group>"; };
+		B8647DF81897545A006DB647 /* YSUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSUtility.h; sourceTree = "<group>"; };
+		B8647DF91897545A006DB647 /* YSUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSUtility.m; sourceTree = "<group>"; };
 		B8647DFB1897547C006DB647 /* UINavigationController+iOS7Rotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+iOS7Rotation.h"; sourceTree = "<group>"; };
 		B8647DFC1897547C006DB647 /* UINavigationController+iOS7Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+iOS7Rotation.m"; sourceTree = "<group>"; };
 		B8647DFE189754CB006DB647 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B8647DFF189754CB006DB647 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B87F14841BB9563100A43904 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BBA9DA438115A7CBB418D8D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		E921433E341FF689CD873B6E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		F7E1715491CB403C67FB5E25 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +68,6 @@
 				B8647DC51897540C006DB647 /* CoreGraphics.framework in Frameworks */,
 				B8647DC71897540C006DB647 /* UIKit.framework in Frameworks */,
 				B8647DC31897540C006DB647 /* Foundation.framework in Frameworks */,
-				18C79EA036F9D11531AE6745 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8647DE21897540C006DB647 /* XCTest.framework in Frameworks */,
 				B8647DE41897540C006DB647 /* UIKit.framework in Frameworks */,
 				B8647DE31897540C006DB647 /* Foundation.framework in Frameworks */,
 			);
@@ -92,32 +83,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		48EA60837F97066640405167 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E921433E341FF689CD873B6E /* Pods.debug.xcconfig */,
-				BBA9DA438115A7CBB418D8D5 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		B8647DB61897540C006DB647 = {
 			isa = PBXGroup;
 			children = (
-				B8647DC81897540C006DB647 /* YSHelperExample */,
-				B8647DF71897545A006DB647 /* YSHelper */,
-				B8647DE71897540C006DB647 /* YSHelperExampleTests */,
+				B8647DC81897540C006DB647 /* YSUtilityExample */,
+				B8647DF71897545A006DB647 /* YSUtility */,
+				B8647DE71897540C006DB647 /* YSUtilityExampleTests */,
 				B8647DC11897540C006DB647 /* Frameworks */,
 				B8647DC01897540C006DB647 /* Products */,
-				48EA60837F97066640405167 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		B8647DC01897540C006DB647 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B8647DBF1897540C006DB647 /* YSHelperExample.app */,
-				B8647DE01897540C006DB647 /* YSHelperExampleTests.xctest */,
+				B8647DBF1897540C006DB647 /* YSUtilityExample.app */,
+				B8647DE01897540C006DB647 /* YSUtilityExample.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,13 +109,11 @@
 				B8647DC21897540C006DB647 /* Foundation.framework */,
 				B8647DC41897540C006DB647 /* CoreGraphics.framework */,
 				B8647DC61897540C006DB647 /* UIKit.framework */,
-				B8647DE11897540C006DB647 /* XCTest.framework */,
-				F7E1715491CB403C67FB5E25 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B8647DC81897540C006DB647 /* YSHelperExample */ = {
+		B8647DC81897540C006DB647 /* YSUtilityExample */ = {
 			isa = PBXGroup;
 			children = (
 				B8647DD11897540C006DB647 /* AppDelegate.h */,
@@ -148,73 +127,70 @@
 				B87F14841BB9563100A43904 /* LaunchScreen.storyboard */,
 				B8647DC91897540C006DB647 /* Supporting Files */,
 			);
-			path = YSHelperExample;
+			path = YSUtilityExample;
 			sourceTree = "<group>";
 		};
 		B8647DC91897540C006DB647 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B8647DCA1897540C006DB647 /* YSHelperExample-Info.plist */,
+				B8647DCA1897540C006DB647 /* YSUtilityExample-Info.plist */,
 				B8647DCB1897540C006DB647 /* InfoPlist.strings */,
 				B8647DCE1897540C006DB647 /* main.m */,
-				B8647DD01897540C006DB647 /* YSHelperExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B8647DE71897540C006DB647 /* YSHelperExampleTests */ = {
+		B8647DE71897540C006DB647 /* YSUtilityExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				B8647DED1897540C006DB647 /* YSHelperExampleTests.m */,
+				B8647DED1897540C006DB647 /* YSUtilityExampleTests.m */,
 				B8647DE81897540C006DB647 /* Supporting Files */,
 			);
-			path = YSHelperExampleTests;
+			path = YSUtilityExampleTests;
 			sourceTree = "<group>";
 		};
 		B8647DE81897540C006DB647 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B8647DE91897540C006DB647 /* YSHelperExampleTests-Info.plist */,
+				B8647DE91897540C006DB647 /* YSUtilityExampleTests-Info.plist */,
 				B8647DEA1897540C006DB647 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B8647DF71897545A006DB647 /* YSHelper */ = {
+		B8647DF71897545A006DB647 /* YSUtility */ = {
 			isa = PBXGroup;
 			children = (
-				B8647DF81897545A006DB647 /* YSHelper.h */,
-				B8647DF91897545A006DB647 /* YSHelper.m */,
+				B8647DF81897545A006DB647 /* YSUtility.h */,
+				B8647DF91897545A006DB647 /* YSUtility.m */,
 			);
-			name = YSHelper;
-			path = ../../Classes/YSHelper;
+			name = YSUtility;
+			path = ../../Classes/YSUtility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B8647DBE1897540C006DB647 /* YSHelperExample */ = {
+		B8647DBE1897540C006DB647 /* YSUtilityExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8647DF11897540C006DB647 /* Build configuration list for PBXNativeTarget "YSHelperExample" */;
+			buildConfigurationList = B8647DF11897540C006DB647 /* Build configuration list for PBXNativeTarget "YSUtilityExample" */;
 			buildPhases = (
-				AA8693C5A5C87427CE62D37E /* Check Pods Manifest.lock */,
 				B8647DBB1897540C006DB647 /* Sources */,
 				B8647DBC1897540C006DB647 /* Frameworks */,
 				B8647DBD1897540C006DB647 /* Resources */,
-				552F6A6114BE5777D64D7800 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = YSHelperExample;
+			name = YSUtilityExample;
 			productName = YSHelperExample;
-			productReference = B8647DBF1897540C006DB647 /* YSHelperExample.app */;
+			productReference = B8647DBF1897540C006DB647 /* YSUtilityExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B8647DDF1897540C006DB647 /* YSHelperExampleTests */ = {
+		B8647DDF1897540C006DB647 /* YSUtilityExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8647DF41897540C006DB647 /* Build configuration list for PBXNativeTarget "YSHelperExampleTests" */;
+			buildConfigurationList = B8647DF41897540C006DB647 /* Build configuration list for PBXNativeTarget "YSUtilityExampleTests" */;
 			buildPhases = (
 				B8647DDC1897540C006DB647 /* Sources */,
 				B8647DDD1897540C006DB647 /* Frameworks */,
@@ -225,9 +201,9 @@
 			dependencies = (
 				B8647DE61897540C006DB647 /* PBXTargetDependency */,
 			);
-			name = YSHelperExampleTests;
+			name = YSUtilityExampleTests;
 			productName = YSHelperExampleTests;
-			productReference = B8647DE01897540C006DB647 /* YSHelperExampleTests.xctest */;
+			productReference = B8647DE01897540C006DB647 /* YSUtilityExample.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -244,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B8647DBA1897540C006DB647 /* Build configuration list for PBXProject "YSHelperExample" */;
+			buildConfigurationList = B8647DBA1897540C006DB647 /* Build configuration list for PBXProject "YSUtilityExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -257,8 +233,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B8647DBE1897540C006DB647 /* YSHelperExample */,
-				B8647DDF1897540C006DB647 /* YSHelperExampleTests */,
+				B8647DBE1897540C006DB647 /* YSUtilityExample */,
+				B8647DDF1897540C006DB647 /* YSUtilityExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,45 +261,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		552F6A6114BE5777D64D7800 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AA8693C5A5C87427CE62D37E /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		B8647DBB1897540C006DB647 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8647DFA1897545A006DB647 /* YSHelper.m in Sources */,
+				B8647DFA1897545A006DB647 /* YSUtility.m in Sources */,
 				B8647DD31897540C006DB647 /* AppDelegate.m in Sources */,
 				B8647DCF1897540C006DB647 /* main.m in Sources */,
 				B8647DFD1897547C006DB647 /* UINavigationController+iOS7Rotation.m in Sources */,
@@ -335,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8647DEE1897540C006DB647 /* YSHelperExampleTests.m in Sources */,
+				B8647DEE1897540C006DB647 /* YSUtilityExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +287,7 @@
 /* Begin PBXTargetDependency section */
 		B8647DE61897540C006DB647 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B8647DBE1897540C006DB647 /* YSHelperExample */;
+			target = B8647DBE1897540C006DB647 /* YSUtilityExample */;
 			targetProxy = B8647DE51897540C006DB647 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -450,32 +393,30 @@
 		};
 		B8647DF21897540C006DB647 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E921433E341FF689CD873B6E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YSHelperExample/YSHelperExample-Prefix.pch";
-				INFOPLIST_FILE = "YSHelperExample/YSHelperExample-Info.plist";
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "YSUtilityExample/YSUtilityExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.YuSugawara.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusuga.YSUtilityExample;
+				PRODUCT_NAME = YSUtilityExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		B8647DF31897540C006DB647 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBA9DA438115A7CBB418D8D5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YSHelperExample/YSHelperExample-Prefix.pch";
-				INFOPLIST_FILE = "YSHelperExample/YSHelperExample-Info.plist";
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "YSUtilityExample/YSUtilityExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.YuSugawara.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yusuga.YSUtilityExample;
+				PRODUCT_NAME = YSUtilityExample;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -483,14 +424,14 @@
 		B8647DF51897540C006DB647 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YSHelperExample.app/YSHelperExample";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YSUtilityExample.app/YSUtilityExample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YSHelperExample/YSHelperExample-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -500,9 +441,9 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"${SRCROOT}/Pods/Headers/**",
 				);
-				INFOPLIST_FILE = "YSHelperExampleTests/YSHelperExampleTests-Info.plist";
+				INFOPLIST_FILE = "YSUtilityExampleTests/YSUtilityExampleTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.YuSugawara.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = YSUtilityExample;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -511,22 +452,22 @@
 		B8647DF61897540C006DB647 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YSHelperExample.app/YSHelperExample";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YSUtilityExample.app/YSUtilityExample";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "YSHelperExample/YSHelperExample-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"${SRCROOT}/Pods/Headers/**",
 				);
-				INFOPLIST_FILE = "YSHelperExampleTests/YSHelperExampleTests-Info.plist";
+				INFOPLIST_FILE = "YSUtilityExampleTests/YSUtilityExampleTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.YuSugawara.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = YSUtilityExample;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -535,7 +476,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B8647DBA1897540C006DB647 /* Build configuration list for PBXProject "YSHelperExample" */ = {
+		B8647DBA1897540C006DB647 /* Build configuration list for PBXProject "YSUtilityExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8647DEF1897540C006DB647 /* Debug */,
@@ -544,7 +485,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8647DF11897540C006DB647 /* Build configuration list for PBXNativeTarget "YSHelperExample" */ = {
+		B8647DF11897540C006DB647 /* Build configuration list for PBXNativeTarget "YSUtilityExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8647DF21897540C006DB647 /* Debug */,
@@ -553,7 +494,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8647DF41897540C006DB647 /* Build configuration list for PBXNativeTarget "YSHelperExampleTests" */ = {
+		B8647DF41897540C006DB647 /* Build configuration list for PBXNativeTarget "YSUtilityExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8647DF51897540C006DB647 /* Debug */,

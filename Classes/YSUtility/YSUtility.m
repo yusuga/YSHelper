@@ -1,16 +1,15 @@
 //
-//  YSHelper.m
-//  YSHelperExample
+//  Utility.m
+//  YSUtilityExample
 //
 //  Created by Yu Sugawara on 2013/02/23.
 //  Copyright (c) 2013年 Yu Sugawara. All rights reserved.
 //
 
-#import "YSHelper.h"
+#import "YSUtility.h"
 #include <sys/sysctl.h>
-#import <LumberjackLauncher/LumberjackLauncher.h>
 
-@implementation YSHelper
+@implementation YSUtility
 
 #pragma mark - Device
 
@@ -142,7 +141,6 @@
     for (NSString *iconName in iconNames) {
         return [UIImage imageNamed:iconName];
     }
-    DDLogError(@"%s; appIcon = nil;", __func__);
     return nil;
 }
 

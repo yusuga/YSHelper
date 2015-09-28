@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  YSHelperExample
+//  YSUtilityExample
 //
 //  Created by Yu Sugawara on 2014/01/28.
 //  Copyright (c) 2014年 Yu Sugawara. All rights reserved.

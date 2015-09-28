@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  YSHelperExample
+//  YSUtilityExample
 //
 //  Created by Yu Sugawara on 2013/12/31.
 //  Copyright (c) 2013年 Yu Sugawara. All rights reserved.

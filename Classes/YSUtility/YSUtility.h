@@ -1,14 +1,14 @@
 //
-//  YSHelper.h
-//  YSHelperExample
+//  Utility.h
+//  YSUtilityExample
 //
 //  Created by Yu Sugawara on 2013/02/23.
 //  Copyright (c) 2013年 Yu Sugawara. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface YSHelper : NSObject
+@interface YSUtility : NSObject
 
 /* Device */
 + (BOOL)isPhone;
