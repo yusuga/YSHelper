@@ -98,7 +98,8 @@
 
 + (BOOL)isJapaneseLanguage
 {
-    return [[self currentLanguage] isEqualToString:@"ja"];
+    NSString *lang = [self currentLanguage];
+    return [lang isEqualToString:@"ja"] || [lang hasPrefix:@"ja-"];
 }
 
 + (NSString*)currentLanguage
