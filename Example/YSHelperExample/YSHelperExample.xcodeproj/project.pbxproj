@@ -24,6 +24,7 @@
 		B8647DFA1897545A006DB647 /* YSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B8647DF91897545A006DB647 /* YSHelper.m */; };
 		B8647DFD1897547C006DB647 /* UINavigationController+iOS7Rotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B8647DFC1897547C006DB647 /* UINavigationController+iOS7Rotation.m */; };
 		B8647E00189754CB006DB647 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B8647DFF189754CB006DB647 /* ViewController.m */; };
+		B87F14851BB9563100A43904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B87F14841BB9563100A43904 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B8647DFC1897547C006DB647 /* UINavigationController+iOS7Rotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+iOS7Rotation.m"; sourceTree = "<group>"; };
 		B8647DFE189754CB006DB647 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B8647DFF189754CB006DB647 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B87F14841BB9563100A43904 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBA9DA438115A7CBB418D8D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E921433E341FF689CD873B6E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F7E1715491CB403C67FB5E25 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 				B8647DFB1897547C006DB647 /* UINavigationController+iOS7Rotation.h */,
 				B8647DFC1897547C006DB647 /* UINavigationController+iOS7Rotation.m */,
 				B8647DDA1897540C006DB647 /* Images.xcassets */,
+				B87F14841BB9563100A43904 /* LaunchScreen.storyboard */,
 				B8647DC91897540C006DB647 /* Supporting Files */,
 			);
 			path = YSHelperExample;
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8647DDB1897540C006DB647 /* Images.xcassets in Resources */,
+				B87F14851BB9563100A43904 /* LaunchScreen.storyboard in Resources */,
 				B8647DCD1897540C006DB647 /* InfoPlist.strings in Resources */,
 				B8647DD61897540C006DB647 /* Main.storyboard in Resources */,
 			);
