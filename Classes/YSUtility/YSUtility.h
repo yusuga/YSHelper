@@ -33,8 +33,9 @@
 /* Image */
 + (UIImage*)appIcon;
 
-/* Function */
+/* Capability */
 + (BOOL)hasAirDrop;
++ (BOOL)isForceTouchEnabled;
 
 /* Version */
 + (BOOL)isGreaterThanThisSystemVersion:(NSString*)version; // versionより大きい

@@ -54,6 +54,7 @@ currentISOCountryCode = %@\n\
 appDisplayName = %@\n\
 deviceName = %@\n\
 hasAirDrop = %@\n\
+isForceTouchEnabled = %@\n\
 isJailbroken = %@",
                           YESorNOString([YSUtility isPhone]),
                           YESorNOString([YSUtility isPad]),
@@ -69,6 +70,7 @@ isJailbroken = %@",
                           [YSUtility appDisplayName],
                           [YSUtility deviceName],
                           YESorNOString([YSUtility hasAirDrop]),
+                          YESorNOString([YSUtility isForceTouchEnabled]),
                           YESorNOString([YSUtility isJailbroken])];
 }
 

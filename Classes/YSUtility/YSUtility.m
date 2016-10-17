@@ -195,6 +195,18 @@
     return s_hasAirDrop;
 }
 
++ (BOOL)isForceTouchEnabled
+{
+    static BOOL __enabled = NO;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        UITraitCollection *traitCollection = [UIApplication sharedApplication].keyWindow.traitCollection;
+        if (![traitCollection respondsToSelector:@selector(forceTouchCapability)]) return ;
+        __enabled = [traitCollection forceTouchCapability] == UIForceTouchCapabilityAvailable;
+    });
+    return __enabled;
+}
+
 #pragma mark - Version
 
 + (NSComparisonResult)compareCurrentSystemVersionAndThisVersion:(NSString*)version
